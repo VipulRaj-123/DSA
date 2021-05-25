@@ -1,0 +1,12 @@
+/* Traverse in level order manner and at each  level print the last element of the queue */
+                 
+          1
+       /     \
+     2        3
+   /   \      /    
+  4     5   6    7
+    \
+     8                                    
+     
+     Explainatio :- At level 0 only element is 1 so print it. At level 1 there are 2 nodes 2 and 3 rightest is 3 so print it,then 7.
+                      
