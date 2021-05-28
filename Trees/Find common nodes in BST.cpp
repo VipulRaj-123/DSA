@@ -1,4 +1,39 @@
 /* Find common nodes in BST */
+/* Given two Binary Search Trees. Find the nodes that are common in both of them, ie- find the intersection of the two BSTs.
+
+    Example 1:
+
+     Input:
+      BST1:
+                                5
+                             /     \
+                           1        10
+                         /   \      /
+                        0     4    7
+                                   \
+                                     9
+      BST2:
+                                10 
+                              /    \
+                             7     20
+                              /   \ 
+                             4     9
+    Output: 4 7 9 10
+
+     Example 2:
+
+     Input:
+       BST1:
+                              10
+                             /  \
+                            2   11
+                             /  \
+                            1   3
+     BST2:
+                              2
+                             /  \
+                            1    3
+   Output: 1 2 3  */
 vector <int> findCommon(Node *root1, Node *root2)
     {
      //Your code here
