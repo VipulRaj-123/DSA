@@ -1,4 +1,29 @@
 /* Find median of BST */
+/* Example 1:
+
+Input:
+       6
+     /   \
+   3      8   
+ /  \    /  \
+1    4  7    9
+Output: 6
+Explanation: Inorder of Given BST will be:
+1, 3, 4, 6, 7, 8, 9. So, here median will 6.
+
+Example 2:
+
+Input:
+       6
+     /   \
+   3      8   
+ /   \    /   
+1    4   7   
+Output: 5
+Explanation:Inorder of Given BST will be:
+1, 3, 4, 6, 7, 8. So, here median will
+(4 + 6)/2 = 10/2 = 5.      */
+
 void inorder(Node* root,vector<int>&v){
     if(!root)
      return;
