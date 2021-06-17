@@ -25,7 +25,8 @@
    }}}
    return v;
   }
-  void dfs(vector<int>&vec,vector<int>adj[],int start,vector<int>&visited){
+  void dfs(vector<int>&vec,vector<int>adj[],int start,vector<int>&visited){ /*This can only work when graph is connected. For disconnected graph we have to do dfs for
+                                                                            every vertex*/
          visited[start]=1;
           vec.push_back(start);
         for(int i=0;i<adj[start].size();i++){
