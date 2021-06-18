@@ -12,18 +12,19 @@ bool detectcycle(vector<int>adj[],int n){
 	  	while(!q.empty()){
 	  		int node=q.front().first;
 	  		int parent=q.front().second;
+			q.pop();
 	  		for(int i=0;i<adj[node].size();i++){
 	  			if(!visited[i]){
 	  				visited[i]=1;
 	  				q.push({i,node});
 				  }
 				  else if(parent!=i)
-				   return false;
+				   return true;
 			  }
 		  }
 	  }	
 	}
-	return true;
+	return false;
 }
 int main(){
 	int n,m,u,v;
