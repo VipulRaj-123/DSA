@@ -14,11 +14,11 @@ bool detectcycle(vector<int>adj[],int n){
 	  		int parent=q.front().second;
 			q.pop();
 	  		for(int i=0;i<adj[node].size();i++){
-	  			if(!visited[i]){
-	  				visited[i]=1;
-	  				q.push({i,node});
+	  			if(!visited[adj[node][i]]){
+	  				visited[adj[node][i]]=1;
+	  				q.push({adj[node][i],node});
 				  }
-				  else if(parent!=i)
+				  else if(parent!=adj[node][i])
 				   return true;
 			  }
 		  }
